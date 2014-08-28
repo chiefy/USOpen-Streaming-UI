@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>US Open Streaming</title>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+        <style>
+            div.controls {
+                position:absolute;
+                top: 13px;
+                left: 20px;
+                padding: 0px;
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="player"></div>
+        <div class="controls">
+            <select name="channel" id="channel">
+                <option value="A">Arthur Ashe</option>
+                <option value="B">Louis Armstrong</option>
+                <option value="C">Grandstand</option>
+                <option value="E">Court 5</option>
+                <option value="K">Court 11</option>
+                <option value="M">Court 13</option>
+                <option value="Q">Court 17</option>
+            </select>
+            <select name="pic_size" id="pic_size">
+                <option value="0">1024x576</option>
+                <option value="1" selected="selected">1280x720</option>
+                <option value="2">1980x1024</option>
+            </select>
+        </div>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.min.js"></script>
+        <script type="text/javascript" src="http://www.usopen.org/uso/js/cookies.js"></script>
+        <script type="text/javascript" src="http://www.usopen.org/s_code.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
